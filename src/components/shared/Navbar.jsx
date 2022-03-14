@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 export const Navbar = () => {
@@ -36,6 +37,13 @@ export const Navbar = () => {
             to="/dc"
           >
           dc
+          </NavLink>
+
+          <NavLink 
+            className={ ({ isActive }) => 'nav-item nav-link' + (isActive ? ' active' : '')}
+            to="/search"
+          >
+          search
           </NavLink>
         </div>
       </div>
