@@ -8,7 +8,6 @@ export const HeroPage = () => {
   const navigate = useNavigate();
 
   const hero =  useMemo( () => getHeroById( id ), [ id ]);
-  
 
   const handleReturn = () => {
     navigate(-1);
@@ -34,10 +33,10 @@ export const HeroPage = () => {
         <img
           src={ imgPath } 
           alt={ superhero }
-          className="img-thumbnail"
+          className="img-thumbnail animate__animated animate__fadeInLeft"
         />
       </div>
-      <div className="col-8">
+      <div className="col-8 animate__animated animate__fadeIn">
         <h3>{ hero.superhero }</h3>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
