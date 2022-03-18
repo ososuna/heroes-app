@@ -14,7 +14,7 @@ export const HeroesApp = () => {
   useEffect(() => {
     if (!user) return;
     localStorage.setItem('user', JSON.stringify( user ));
-  }, [ user ])
+  }, [ user ]);
   
   return (
     <AuthContext.Provider value={{
